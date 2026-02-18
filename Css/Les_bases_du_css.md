@@ -100,7 +100,7 @@ Tout élément HTML est une boîte.
 
 - **Margin (Marge)** : L'espace extérieur (pour éloigner les voisins).
 
-![schema padding et margin](/public/padding-margin.png)
+![schema padding et margin](./public/padding-margin.png)
 
 ### 3. Effets Visuels : Box Shadow
 
