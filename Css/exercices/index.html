@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices - CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#">Cours</a></li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Apprendre le CSS proprement</h1>
+            <p class="subtitle">Un guide pratique pour maîtriser le design web.</p>
+            <div class="actions">
+                <button class="btn primary">Démarrer</button>
+                <button class="btn">En savoir plus</button>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="card" data-status="done">
+                <h3>HTML5</h3>
+                <p>La structure de base de vos pages.</p>
+            </div>
+            <div class="card" data-status="current">
+                <h3>CSS3</h3>
+                <p>Le style et la mise en page moderne.</p>
+            </div>
+            <div class="card" data-status="upcoming">
+                <h3>JavaScript</h3>
+                <p></p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <form class="contact-form">
+                <input type="text" placeholder="Nom" required>
+                <input type="email" placeholder="Email">
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
