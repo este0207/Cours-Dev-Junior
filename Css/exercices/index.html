@@ -3,57 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercices - CSS</title>
+    <title>Master CSS Sandbox</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header class="main-header">
-        <nav>
-            <ul class="nav-list">
+        <nav class="nav-container">
+            <ul id="menu">
                 <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#">Articles</a></li>
                 <li><a href="#">Cours</a></li>
-                <li><a href="#">Projets</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h1>Apprendre le CSS proprement</h1>
-            <p class="subtitle">Un guide pratique pour maîtriser le design web.</p>
-            <div class="actions">
-                <button class="btn primary">Démarrer</button>
-                <button class="btn">En savoir plus</button>
+        <section id="hero" class="section">
+            <h1 class="title">Apprendre le CSS</h1>
+            <p class="lead">Le guide ultime pour maîtriser les sélecteurs et le design.</p>
+            <div class="cta">
+                <button class="btn primary">Commencer</button>
+                <button class="btn">Documentation</button>
             </div>
         </section>
 
-        <section id="features">
-            <div class="card" data-status="done">
-                <h3>HTML5</h3>
-                <p>La structure de base de vos pages.</p>
-            </div>
-            <div class="card" data-status="current">
-                <h3>CSS3</h3>
-                <p>Le style et la mise en page moderne.</p>
-            </div>
-            <div class="card" data-status="upcoming">
-                <h3>JavaScript</h3>
+        <section id="cards-container" class="section">
+            <article class="card" data-level="beginner">
+                <h3>Niveau Débutant</h3>
+                <p>Apprendre les couleurs et les bordures.</p>
+            </article>
+            <article class="card featured" data-level="intermediate">
+                <h3>Niveau Avancé</h3>
+                <p>Maîtriser Flexbox et les grilles.</p>
+            </article>
+            <article class="card" data-level="expert">
+                <h3>Niveau Maître</h3>
                 <p></p>
-            </div>
+            </article>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="section">
             <form class="contact-form">
                 <input type="text" placeholder="Nom" required>
-                <input type="email" placeholder="Email">
+                <input type="email" placeholder="Email" required>
+                <label>
+                    <input type="checkbox" checked> S'abonner
+                </label>
                 <button type="submit">Envoyer</button>
             </form>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 - <a href="#">Mentions Légales</a></p>
+    </footer>
 
 </body>
 
